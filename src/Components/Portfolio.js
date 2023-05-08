@@ -41,7 +41,7 @@ class Portfolio extends Component {
                 </div>
                 
                 <div className="portfolio-link">
-                  PODCAST: NO MATES AL PERRITO - RADIO SHOW
+                  PODCAST: NO MATES AL PERRITO - ONE OF THREE MEMBERS OF RADIO SHOW
                   <br/><br/>
                   <iframe
                     src="https://www.ivoox.com/player_es_podcast_1892117_zp_1.html"
@@ -61,57 +61,102 @@ class Portfolio extends Component {
                 id="portfolio-wrapper"
                 className="bgrid-quarters s-bgrid-thirds cf"
               >
-                {/* TO DO - stuff from old site + my project from barad's class (the stable matching one and the money one) */}
-                Work in progress
+                <div className="portfolio-link">
+                  SCHOOL-WORK: NATURAL LANGUAGE PROCESSING <a href="/docs/NLPClass.pdf" target="blank_">LITERATURE REVIEW</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: COMPUTATIONAL PHOTOGRAPHY <a href="/docs/GraphicsClass.pdf" target="blank_">FINAL PROJECT</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: TECHNICAL WRITING <a href="/docs/Poster.pdf" target="blank_">IMAGE CAPTIONING POSTER</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: MATHEMATICAL PROBLEM SOLVING <a href="/docs/Portfolio.pdf" target="blank_">PORTFOLIO</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: FEMINISM AND SCIENCE <a href="/docs/ProgressiveProjectPart1.pdf" target="blank_">STABLE MATCHING ANALYSIS</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: FEMINISM AND SCIENCE <a href="/docs/ProgressiveProjectPart3.pdf" target="blank_">TIME = MONEY ANALYSIS</a>
+                </div>
+                <div className="portfolio-link">
+                  SCHOOL-WORK: 3D MODELLING AND ANIMATION <a href="https://www.youtube.com/@dianagonzalezsantillan3622/videos" target="blank_">PROJECTS</a>
+                </div>
               </div>
 
-
-              <h1>3D modelling</h1>
+              <h1>Things I like (NOT authored by me)</h1>
               <div
                 id="portfolio-wrapper"
                 className="bgrid-quarters s-bgrid-thirds cf"
               >
-                {/* TO DO - stuff from old site */}
-                Work in progress
-              </div>
+                <p>
+                  <div>
+                    <a href="https://www.laboratoria.la/en" target="_blank">Laboratoria</a>
+                  </div>
+                  <div>
+                    <a href="https://girlswhocode.com/about-us/" target="_blank">Girls Who Code</a>
+                  </div>
+                </p>
 
-              <h1>Sites I like (I did not author them)</h1>
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {/* TO DO -Girls Who Code
-Laboratoria
-Longplayer
-Bandcamp
-Http.cat
+                <p>
+                  <div>
+                    <a href="https://affinelayer.com/pixsrv/" target="_blank">Image-To-Image</a>
+                  </div>
+                  <div>
+                    <a href="/docs/graph_coloring.pdf" target="_blank">6-color Graph Coloring Proof</a>
+                  </div>
+                  <div>
+                    <a href="https://newmaterialism.eu/almanac/i/intra-action.html" target="_blank">Intra-Action</a>
+                  </div>
+                </p>
 
-https://newmaterialism.eu/almanac/i/intra-action.html Ever since I took a feminism and science class by Karen Barad my mind has been blown away by the idea of intra-action. I love how science and quantum physics can be seen with feminist and queer eyes, and how that helps make much more sense of everything.
+                <p>
+                  <div>
+                    <a href="https://bandcamp.com/digonsan" target="_blank">Bandcamp</a>
+                  </div>
+                  <div>
+                    <a href="https://longplayer.org/" target="_blank">Longplayer</a>
+                  </div>
+                </p>
 
+                <p>
+                  <div>
+                    <a href="/docs/DiabloDeLosNumeros.pdf" target="_blank">El Diablo de Los Numeros</a>
+                  </div>
+                  <div>
+                    <a href="https://www.sbnation.com/a/17776-football" target="_blank">17776</a>
+                  </div>
+                  <div>
+                    <a href="https://www.sbnation.com/c/secret-base/21410129/20020" target="_blank">20020</a>
+                  </div>
+                </p>
 
+                <p>
+                  <div>
+                    <a href="https://http.cat" target="_blank">HTTP Cats</a>
+                  </div>
+                  <div>
+                    <a href="https://adarkroom.doublespeakgames.com/" target="_blank">A Dark Room</a>
+                  </div>
+                </p>
 
-Image-to-Image A model that takes edges and returns cat textured images, and more.
-
-6-color graph coloring!! This is one of my favorite proofs. I also really like that the 4-color proof because it was the first computer assisted proof in history, and I think that is exciting.
-
-A Dark Room Fun text-based game.
-
-El Diablo de los Numeros This is a great children's book that explains some complex mathematical concepts in really simple ways.
-
-El Libro de las Preguntas
-
-17776 There's also a second part: 20020.
-
-The Useless Web
-
-A Centennial Light Bulb
-
-Fanaticos de los Boilers
-
-Figwit
-
-Nooooooooooooo For use in dire situations.*/}
-Work in progress
+                <p>
+                  <div>
+                    <a href="https://theuselessweb.com/" target="_blank">The Useless Web</a>
+                  </div>
+                  <div>
+                    <a href="http://www.centennialbulb.org/cam.htm" target="_blank">A Centennial Light Bulb</a>
+                  </div>
+                  <div>
+                    <a href="https://www.instagram.com/fanaticosdelosboilers/" target="_blank">Fanaticos de los Boilers</a>
+                  </div>
+                  <div>
+                    <a href="http://www.figwitlives.net/index.htm" target="_blank">Figwit</a>
+                  </div>
+                  <div>
+                    <a href="https://theuselessweb.site/nooooooooooooooo/" target="_blank">Nooooooooooooo</a>
+                  </div>
+                </p>
               </div>
 
             </div>
