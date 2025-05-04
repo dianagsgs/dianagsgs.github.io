@@ -22,4 +22,3 @@ npm run deploy
 Then check dianagsgs.github.io
 
 ## TO DO
-Finish TO DOs in portfolio component.
