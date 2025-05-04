@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/default.css">
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css">
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/media-queries.css">
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/magnific-popup.css">
+<html>
+<head>
+  <link href="https://vjs.zencdn.net/8.22.0/video-js.css" rel="stylesheet" />
+  <script src="https://artifact.plugin.npaw.com/artifactory/plugins/js/7.3.9/NpawPlugin.js"></script>
+</head>
 
+<body>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    data-setup="{}"
+  >
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+   
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video> 
 
-    <title>DianaG.S.</title>
-  </head>
+  <script src="https://vjs.zencdn.net/8.22/video.js"></script>
+  
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      console.log("content loaded ");
+      let npawPlugin = new NpawPlugin('powerce');
+      let player = videojs('my-video');
+      npawPlugin.registerAdapter(player, 'https://qa-smartplugin.youbora.com/catalog/v7/js/lib/last-build/samples/adapters-json/video/videojs/7.0.5-videojs-js.json');
+    });
+    console.log("hola");
+    
+  </script>
 
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-
-
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>
