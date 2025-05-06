@@ -1,8 +1,10 @@
 <html>
 <head>
-  <link href="https://vjs.zencdn.net/8.22.0/video-js.css" rel="stylesheet" />
-  <script src="https://vjs.zencdn.net/8.22/video.min.js"></script>
-  <script src="https://artifact.plugin.npaw.com/artifactory/plugins/js/7.3.9/NpawPlugin.js"></script>
+  <!-- unpkg : use the latest version of Video.js -->
+<link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+<script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+
+<script src="https://artifact.plugin.npaw.com/artifactory/plugins/js/7.3.9/NpawPlugin.js"></script>
 </head>
 
 <body>
@@ -17,13 +19,6 @@
   >
     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
     <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
   </video> 
   
   <script src="npaw.js" defer ></script>
