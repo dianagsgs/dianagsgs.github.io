@@ -72,7 +72,7 @@
     "shakaTech,_getShaka,adapter":"var tech=adapter.getTech(); return tech.shakaPlayer||tech._shakaplayerInstance",
   
     "adapter,isInAds":"try{return (this.player.ads && this.player.ads.inAdBreak && (typeof this.player.ads.inAdBreak === 'function') && this.player.ads.inAdBreak())}catch(e){return false}",
-    "adapter,getBitrate":"var ret=null;var tech=this.getUsedTech();if(tech&&tech.getBitrate){ret=tech.getBitrate(this)};return ret/1000000",
+    "adapter,getBitrate":"console.log(\"i am here\");var ret=null;var tech=this.getUsedTech();if(tech&&tech.getBitrate){ret=tech.getBitrate(this)};return (ret/1000000);",
     "adapter,checkExistsPlayer":"try{return this.checkExistsObjectOnPage(this.player.el())}catch(err){return true}",
     "adapter,pauseListener,e":"this.firePlayerLog('pauseListener',{});this.firePause({},'pauseListener')",
     "adapter,bufferingListener,e":"this.firePlayerLog('bufferingListener',{});if(!this.flags.isSeeking){this.fireBufferBegin({},false,'bufferingListener')}",
