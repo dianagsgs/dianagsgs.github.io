@@ -21,9 +21,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    let count = 0;
+    document.getElementById('views').innerHTML = 0;
     window.setInterval(function(){
-      fetch('127.0.0.1:5000/get_views', {
+      fetch('/get_views', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -31,6 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
       })
       .then(response => response.json())
       .then(data => console.log(data));
-      document.getElementById('views').innerHTML = count;
+      document.getElementById('views').innerHTML = 1;
     }, 10000);
 });
