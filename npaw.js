@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const bits_json = 'http://qa-smartplugin.youbora.com/catalog/v7/js/lib/last-build/samples/adapters-json/video/videojs/7.0.5-videojs-js.json';
+    const bits_json = 'npaw_og_adapter.json';
     const mbps_json = 'npaw_adapter.json';
     let npawPlugin = new NpawPlugin('powerce');
     let player = videojs('my-video');
