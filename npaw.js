@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    document.getElementById('views').innerHTML = 0;
+    document.getElementById('views').innerHTML = "loading";
     window.setInterval(function(){
       fetch('http://127.0.0.1:5000/get_views', {
         method: 'GET',
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
       })
       .then(response => response.json())
-      .then(data => console.log(JSON.parse(data).data[0].metrics[0].values[0].data[0].value));
-      document.getElementById('views').innerHTML = 1;
+      .then(data => console.log(data));
+      document.getElementById('views').innerHTML = JSON.parse(data).data[0].metrics[0].values[0].data[0].value;
     }, 10000);
 });
