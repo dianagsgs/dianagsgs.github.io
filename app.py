@@ -4,7 +4,6 @@ from hashlib import md5
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 
-
 app = Flask(__name__)
 CORS(app, origins=["https://dianagsgs.github.io"])  # Add your allowed origin(s) here
 
@@ -20,7 +19,7 @@ def get_views():
     dateToken = ('&dateToken=' + str(expiration_time))
 
     host = "https://api.npaw.com"
-    pre_url = '/data?fromDate=last6hours&metrics=plays' + dateToken + '&filter=[{"name":"MyIPv6","rules":{"ip":["2806:2a0:f0e:810d:31d6:11f0:4970:1d50"]}}]'
+    pre_url = '/data?fromDate=last6hours&metrics=plays' + dateToken + '&filter=[{"name":"MyIPv6","rules":{"ip":["2806:2a0:f0e:810d:d8a1:eb7:c02e:fda2"]}}]'
 
     # Token Generation
     token_encrypt = md5(f"{account_code}{pre_url}{api_key}".encode('utf-8'))
