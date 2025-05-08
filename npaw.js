@@ -20,4 +20,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
         });
     });
+
+    let count = 0;
+    window.setInterval(function(){
+      fetch('/get_views', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => console.log(data));
+      document.getElementById('views').innerHTML = count;
+    }, 10000);
 });
