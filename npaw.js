@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     let count = 0;
     window.setInterval(function(){
-      fetch('/get_views', {
+      fetch('127.0.0.1:5000/get_views', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
