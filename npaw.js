@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
       })
       .then(response => response.json())
-      .then(data => console.log(data));
-      document.getElementById('views').innerHTML = JSON.parse(data).data[0].metrics[0].values[0].data[0].value;
+      .then(data => document.getElementById('views').innerHTML = JSON.parse(data).data[0].metrics[0].values[0].data[0].value);
     }, 10000);
 });
