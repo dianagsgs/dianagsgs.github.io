@@ -2,8 +2,12 @@ import time
 import requests
 from hashlib import md5
 from flask import Flask, request, jsonify, make_response
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app, origins=["https://dianagsgs.github.io"])  # Add your allowed origin(s) here
+
 
 account_code = "/powerce"
 api_key = "AzZ7mGCbLTxprItPsExOmijMalOx9PxEovbQ9asP47baO2JRCEGZLQ34s4PbZB9E"
@@ -26,7 +30,7 @@ def get_views():
     final_url = f"{host}{account_code}{pre_url}&token={token}"
 
     response = requests.get(final_url)    
-    return make_response(jsonify(response.text), 200)
+    return make_response(jsonify(response.text).data, 200)
 
 
 if __name__ == '__main__':
