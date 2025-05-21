@@ -2,7 +2,37 @@
 <head>
 </head>
 
-<body>
+<style>
+
+  .light_mode{
+    background-color: antiquewhite;
+    color: rgb(32, 30, 28);
+  }
+
+  .dark_mode{
+    background-color: rgb(32, 30, 28);
+    color: rgb(190, 178, 163);
+  }
+
+  body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: justify;
+  }
+
+  a:link {
+      color: rgb(0, 71, 171);
+  }
+
+</style>
+
+<body id="top">
+  <label>
+    <input type="checkbox" id="dark_mode" checked /> Dark mode (obviously default)
+  </label>
+
   <h1>Diana's Site</h1>
   <p>
     Hello, my name is Diana and this is my online Curriculim Vitae.
@@ -17,12 +47,18 @@
     revamp... We will never know.
   </p>
   <p>
-    Regardless, for now I need a place to house relevant documents and showcase my curriculim, so here we are.
+    Regardless, for now I need a place to house relevant documents and showcase my curriculim in chronological order, so here we are.
   </p>
   <p>
     Enjoy!
   </p>
-  <h2>About Me</h2>
+  <h3>Contents:</h3>
+  <p><a href="#about">About Me</a></p>
+  <p><a href="#education">Education</a></p>
+  <p><a href="#experience">Experience</a></p>
+  <p><a href="#interests">Interests</a></p>
+  <p>Note: This site was last updated: 2025-05-21</p>
+  <h2 id="about">About Me</h2>
   <p>
     I am a computer scientist (M.S.) with 7+ years of experience in technical, customer-facing roles.
     I excel at quickly becoming a subject matter expert and translating complex technical concepts for
@@ -38,17 +74,91 @@
   </p>
   <p>You can contact me here: <b>digonsan94 at gmail dot com</b></p>
   <p>And you can look at the latest versions of my resumé (by target role) <a href="https://drive.google.com/drive/folders/1Fjcp0CKLnUIsUbMOGAtBRaauqPhyFlo9?usp=sharing" target="_blank">here</a>.</p>
-  <h2>Education</h2>
+  <h2 id="education">Education</h2>
+  <h3>2013 - 2017: B.S. in Computer Science - UCSC</h3>
   <p>
     I have a Bachelor of Science degree in Computer Science with a minor in Mathematics from
-    the University of California, Santa Cruz. <a href="public/docs/UCSC_Unofficial.pdf" target="_blank">Here</a> is my unofficial transcript.
+    the <b>University of California, Santa Cruz</b>, where I graduated in 2017 with a GPA of 3.36/4.
+    <a href="public/docs/UCSC_Unofficial.pdf" target="_blank">Here</a> is my unofficial transcript.
   </p>
+  <p>These are some assignments from my undergrad that I am proud of:</p>
+  <p>- MATH 101, Fall 2016: Mathematical Problem Solving -- <a target="_blank" href="public/docs/Portfolio.pdf">Final portfolio of solved problems</a></p>
+  <p>- CMPS 185, Winter 2017: Technical Writing -- <a target="_blank" href="public/docs/Poster.pdf">Image Captioning: Generation from Visual Input (poster)</a></p>
+  <p>- FMST 30, Spring 2017: Feminism and Science -- <a target="_blank" href="public/docs/ProgressiveProjectPart1.pdf">Stable Matching: A heteronormative mathematical bijection (essay)</a></p>
+  <p>- FMST 30, Spring 2017: Feminism and Science -- <a target="_blank" href="public/docs/ProgressiveProjectPart3.pdf">Optimization and the “Time = Money” mentality (essay)</a></p>
+  <h3>2020 - 2022: M.S. in Computer Science - UIUC</h3>
   <p>
     I also have a Masters of Science (I am a mistress of science ;)) in Computer Science from
-    the University of Illinois, Urbana-Champaign. <a href="public/docs/UIUC_Unofficial.pdf" target="_blank">Here</a> is my unofficial transcript.
+    the <b>University of Illinois, Urbana-Champaign</b>, where I graduated in 2022 with a GPA of 3.75/4.
+    <a href="public/docs/UIUC_Unofficial.pdf" target="_blank">Here</a> is my unofficial transcript.
   </p>
-  <p><b>To do:</b> work and projects (current and past -- pdfs add to education if I did them in college)</p>
-  <p><b>To do:</b>  things I like and side quests (boilers, bicis, nmap, poemas, viajes, google maps)</p>
-  To do: DARK MODE TOGGLE
+  <p>These are some assignments from my masters that I am proud of:</p>
+  <p>- CS 445, Spring 2021: Computational Photography -- <a target="_blank" href="public/docs/GraphicsClass.pdf">Implementing Phong Shading for Blender’s Cycles Renderer</a></p>
+  <p>- CS 447, Fall 2021: Natural Language Processing -- <a target="_blank" href="public/docs/NLPClass.pdf">Literature Review: NLP for Indigenous Languages of the Americas</a></p>
+  <h2 id="experience">Experience</h2>
+  You can check out my most updated experience and other details about my professional profile on
+  <a target="_blank" href="https://www.linkedin.com/in/diana-gonzalez-s/">LinkedIn</a>
+  <h3>2015 - 2017: Tutoring - Various employers</h3>
+  <p> 
+    - UCSC: Introduction to Computer Science (CMPS10), Introduction to Programming in Java (CMPS5J), 
+    Intermediate Programming in Java (CMPS11), Discrete Math (CMPE16): Grader and Tutor
+  </p>
+  <p>
+    - iDTech: JavaScript and Scratch programming: Instructor
+  </p>
+  <p>
+    - Pleasanton Tutoring: Math, Spanish, and Computer Science: Tutor
+  </p>
+  <h3>2017 - 2021: Technical Operations Specialist - Sojern</h3>
+  <p>
+    Managed high-priority technical escalations, working closely with engineering and product teams, ensuring fast resolution and customer satisfaction.
+    Worked with customers to install tracking code snippets written in JavaScript into their websites.
+    Worked with booking engines to integrate tracking codes in their systems for easier client onboarding. 
+    Ensured clear and updated documentation of every new process in Spanish and English.
+    Developed internal tools such as Chrome extensions and web ad preview screens using React and JS.
+    Worked closely with product and engineering teams to define internal and external product use cases.
+  </p>
+  <h3>2021 - 2023: Technical Solutions Engineer - Google</h3>
+  <p>
+    Provided in-depth technical guidance on GCP storage infrastructure, working with Premium customers and specilizing in Cloud Storage, Firestore / Datastore, Bigtable, and Spanner.
+    Understood customer scalability and reliability needs, and assisting them in architecting scalable solutions.
+    Created an internal dashboard with TypeScript, reducing manager-level effort in monitoring active support cases.
+    Created technical documentation to improve developer onboarding for Google Cloud Platform products.
+    Achieved ACE certification (valid 2021-2023), demonstrating cloud proficiency.
+  </p>
+  <h3>2022 - 2024: Web Developer - La Bestia (unpaid volunteering)</h3>
+  <p>
+    1. Developed frontend of https://somoslabestia.com using React.js to showcase all of La Bestia's product offerings. Coordinated with designers, end users, and other developers to drive the website revamp project to completion in a timely manner.
+  </p>
+  <p>
+    2. Developed frontend (React.js) and backend (Python / Vercel Postgres) of La Bestia's online radio station, however this site is no longer up as no one was able to maintain it after 2024. I can provide access to the repo if requested.
+  </p>
+  <h3>2023 - 2025: Technical Account Manager - Qualtrics</h3>
+  <p>
+    Served as a trusted technical advisor, helping enterprise clients optimize their use of Qualtrics products through leading initiatives to increase client usage and adoption metrics.
+    Acted as Pod Lead for one of the sub-teams of the LAC region, leading 5 team members with consistent mentorship and check-ins to ensure their success in the role.
+    Delivered technical presentations and proof-of-concepts on Qualtrics solutions for enterprise customers.
+    Leveraged REST APIs and JavaScript to enhance client workflows and help develop customized solutions.
+    Worked cross-functionally with Support, Engineering, Product, and Account teams to bring customer projects to completion and drive product improvement based on customer feedback.
+  </p>
+  <h3>2025 - present: Customer Engineer - Nice People At Work (NPAW)</h3>
+  <p>TO DO</p>
+  <h2 id="interests">Interests</h2>
+  <p><b>To do:</b>  things I like and side quests (dos pdfs, boilers, bicis, poemas, viajes, google maps, intra-action, bandcamp and spotify playlists,longplayer, 17776 and 20020, http cats, a dark room, The Useless Web
+A Centennial Light Bulb)</p>
+  <p><a href="#top">Back to top</a></p>
+  <p>To Do: agregar links a universidades, empresas en las que trabajé, etc. y afinar detalles de diseño</p>
 </body>
+
+<script>
+    let body = document.getElementById("top");
+    body.className = "dark_mode";
+    let dark_mode_checkbox = document.getElementById("dark_mode");
+    dark_mode_checkbox.addEventListener("change",function (e) {
+      console.log("here " + dark_mode_checkbox);
+      if(dark_mode_checkbox.checked) body.className = "dark_mode";
+      else body.className = "light_mode";
+    });
+  </script>
+
 </html>
